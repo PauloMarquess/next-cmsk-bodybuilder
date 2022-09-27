@@ -7,16 +7,18 @@ const Copyright = () => {
   return (
     <CopyrightStyle>
       <p>© {year} Cmsk Bodybuilder.</p>
-      <p>{i18n.t("copyrightReservation")}.</p>
+      <p>{`${i18n.t("copyrightReservation")}`}</p>
       <p>
-        {i18n.t("development")}
-        <a
-          href="https://github.com/PauloMarquess"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Web Intelligence
-        </a>
+        <>
+          {i18n.t("development")}
+          <a
+            href="https://github.com/PauloMarquess"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Web Intelligence
+          </a>
+        </>
       </p>
     </CopyrightStyle>
   );

@@ -10,16 +10,28 @@ const Mission = () => {
     <Container responsive id="mission">
       <CardMission>
         <h1>
-          {i18n.t("mission.title")} <span> {i18n.t("mission.titleSpan")}</span>
+          <>
+            {i18n.t("mission.title")}
+            <span>
+              <> {i18n.t("mission.titleSpan")}</>
+            </span>
+          </>
         </h1>
-        <h3>
-          <span> | </span> {i18n.t("mission.subtitle")}
-        </h3>
+        <>
+          <h3>
+            <>
+              <span> | </span> {i18n.t("mission.subtitle")}
+            </>
+          </h3>
+        </>
+
         <p>
-          {i18n.t("mission.description")}
-          {i18n.t("mission.descriptionRestInit")}
-          <strong>{`${i18n.t("mission.descriptionSpan")}`}</strong>
-          {i18n.t("mission.descriptionRest")}
+          <>
+            {i18n.t("mission.description")}
+            {i18n.t("mission.descriptionRestInit")}
+            <strong>{`${i18n.t("mission.descriptionSpan")}`}</strong>
+            {i18n.t("mission.descriptionRest")}
+          </>
         </p>
         <ListObjtive>
           {objective.map((obj) => (

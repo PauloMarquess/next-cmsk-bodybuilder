@@ -36,7 +36,7 @@ const Team = () => {
       padding="20px 0 40px 0"
     >
       <Legend>
-        <h1>{i18n.t("team.title")} </h1>
+        <h1>{`${i18n.t("team.title")}`} </h1>
         <Divider />
       </Legend>
       <CardTeacher>

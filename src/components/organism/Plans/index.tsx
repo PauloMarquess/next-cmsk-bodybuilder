@@ -25,7 +25,9 @@ const Plans = () => {
       responsive
     >
       <LegensPlan>
-        {i18n.t("plans.title")} <span>{`${i18n.t("plans.titleSpan")}`}</span>{" "}
+        <>
+          {i18n.t("plans.title")} <span>{`${i18n.t("plans.titleSpan")}`}</span>
+        </>
       </LegensPlan>
       <CardPlans>
         {plans.map((plan, i) => (
@@ -42,7 +44,9 @@ const Plans = () => {
             )}
             <h3>{plan.legend}</h3>
             <p>
-              <Cifrao> {i18n.t("plans.coin")}</Cifrao>{" "}
+              <Cifrao>
+                <>{i18n.t("plans.coin")}</>
+              </Cifrao>
               <Price>{plan.price} </Price> /{plan.month}
             </p>
             <Divider />

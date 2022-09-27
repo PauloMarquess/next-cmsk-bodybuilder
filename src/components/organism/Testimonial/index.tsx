@@ -41,9 +41,11 @@ const Testimonial = () => {
     <SectionTestimonial>
       <CardTestimonial>
         <h1>
-          {i18n.t("testimonial.legend")}{" "}
-          <span> {i18n.t("testimonial.span")}</span>{" "}
-          {i18n.t("testimonial.legendRest")}
+          <>
+            {i18n.t("testimonial.legend")}
+            <span> {`${i18n.t("testimonial.span")}`}</span>
+            {i18n.t("testimonial.legendRest")}
+          </>
         </h1>
       </CardTestimonial>
       <SlideContainer>

@@ -274,7 +274,7 @@ export const messages = {
           emailLegend: "consultoriacms@yahoo.com.br",
         },
       },
-      copyrightReservation: "All rights reserved",
+      copyrightReservation: "All rights reserved.",
       development: "Developed",
     },
   },

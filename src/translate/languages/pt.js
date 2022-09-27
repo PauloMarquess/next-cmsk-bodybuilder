@@ -275,7 +275,7 @@ export const messages = {
           emailLegend: "consultoriacms@yahoo.com.br",
         },
       },
-      copyrightReservation: "Todos os direitos reservados",
+      copyrightReservation: "Todos os direitos reservados.",
       development: "Desenvolvimento",
     },
   },
