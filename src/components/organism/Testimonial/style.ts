@@ -77,7 +77,7 @@ export const SlideContainer = styled.div`
     width: auto;
     left: calc(50% - 64px);
     @media (max-width: 769px) {
-      bottom: 70px;
+      bottom: 20px;
     }
   }
 `;

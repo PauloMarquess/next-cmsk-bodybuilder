@@ -1,4 +1,6 @@
 import {
+  Chat,
+  Copyright,
   Footer,
   Header,
   Mission,
@@ -18,6 +20,8 @@ const Home = () => {
       <Plans />
       <Testimonial />
       <Footer />
+      <Chat />
+      <Copyright />
     </>
   );
 };
