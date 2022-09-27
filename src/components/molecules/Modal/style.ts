@@ -35,15 +35,16 @@ export const ButtonClose = styled(CardButton)`
   padding: 10px;
   border-radius: 4px;
 `;
-export const LogoImage = styled.img`
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  background: ${COLORS.primary};
-
-  @media (max-width: 769px) {
-    width: 100px;
-    height: 100px;
+export const CardLogoPerfil = styled.div`
+  #logo-perfil {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 100%;
+    background: ${COLORS.primary};
+    @media (max-width: 769px) {
+      width: 100px;
+      height: 100px;
+    }
   }
 `;
 export const CardDetails = styled.div`
@@ -66,8 +67,5 @@ export const List = styled.ul`
     display: flex;
     align-items: center;
     gap: 20px;
-  }
-  img {
-    width: 20px;
   }
 `;

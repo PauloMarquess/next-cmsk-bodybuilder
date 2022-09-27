@@ -1,3 +1,4 @@
+import Image from "next/future/image";
 import { useEffect } from "react";
 import { icons } from "../../../assets";
 
@@ -7,7 +8,7 @@ import {
   CardModal,
   ContainerModal,
   List,
-  LogoImage,
+  CardLogoPerfil,
 } from "./style";
 
 const Modal = ({ id = "modal", handleModal, details, modal }: any) => {
@@ -17,22 +18,28 @@ const Modal = ({ id = "modal", handleModal, details, modal }: any) => {
     }
   };
   const { name, perfil, specialties } = details;
-  const element: any = document.getElementById("main");
+  // const element: any = document.getElementById("main");
 
-  useEffect(() => {
-    modal && (element.style.overflow = "hidden");
-  }, []);
+  // useEffect(() => {
+  //   modal && (element.style.overflow = "hidden");
+  // }, [element.style, modal]);
   return (
     <ContainerModal onClick={handleOutsideClick} id={id}>
       <CardModal>
         <ButtonClose onClick={handleModal}>x</ButtonClose>
         <CardDetails>
-          <LogoImage src={perfil} alt="" />
+          <CardLogoPerfil>
+            <Image
+              id="logo-perfil"
+              src={perfil}
+              alt="foto de perfil `${name}`"
+            />
+          </CardLogoPerfil>
           <h1>{name}</h1>
           <List>
             {specialties?.map((specialtie: any) => (
-              <li>
-                <img src={icons.verify} alt="icone verificado" />
+              <li key={specialtie.name}>
+                <Image width={20} src={icons.verify} alt="icone verificado" />
                 {specialtie.name}
               </li>
             ))}
