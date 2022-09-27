@@ -10,7 +10,11 @@ const Copyright = () => {
       <p>{i18n.t("copyrightReservation")}.</p>
       <p>
         {i18n.t("development")}
-        <a href="https://github.com/PauloMarquess" target="_blank">
+        <a
+          href="https://github.com/PauloMarquess"
+          target="_blank"
+          rel="noreferrer"
+        >
           Web Intelligence
         </a>
       </p>
