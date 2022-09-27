@@ -15,12 +15,14 @@ export const Navigation = styled.ul`
   }
 `;
 
-export const Media = styled.img`
-  width: 20px;
-  height: 20px;
-  filter: grayscale(100%);
+export const Media = styled.div`
+  .media {
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%);
 
-  :hover {
-    filter: grayscale(0);
+    :hover {
+      filter: grayscale(0);
+    }
   }
 `;
