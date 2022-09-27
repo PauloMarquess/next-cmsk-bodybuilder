@@ -54,13 +54,14 @@ export const ImageMission = styled.div`
 export const ListObjtive = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
   li {
     display: flex;
     align-items: center;
     gap: 10px;
+    height: 25px;
   }
   img {
-    width: 25px;
+    width: 30px;
   }
 `;

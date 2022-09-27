@@ -42,7 +42,7 @@ export const Information = styled.div`
     }
   }
   @media (max-width: 769px) {
-    margin-top: 220px;
+    margin-top: 80%;
     width: 100%;
     right: 0;
     height: 500px;
@@ -62,18 +62,25 @@ export const Information = styled.div`
   }
 `;
 
-export const Images = styled.img`
+export const CardImages = styled.div`
+  width: 40%;
   position: relative;
   left: 200px;
   top: 60px;
-  width: 40%;
-  border-radius: 28px;
+
   @media (max-width: 769px) {
-    top: 140px;
     width: 100%;
+    top: 140px;
     position: absolute;
     left: 0;
     opacity: 0.2;
-    border-radius: 0;
+  }
+  #imagem-presentation {
+    border-radius: 28px;
+    width: 100%;
+    @media (max-width: 769px) {
+      border-radius: 0;
+      height: 100%;
+    }
   }
 `;

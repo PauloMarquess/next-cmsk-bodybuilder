@@ -8,6 +8,7 @@ export const Navigation = styled.nav`
     display: flex;
     gap: 20px;
     align-items: center;
+    height: 30px;
     img {
       width: 17px;
       filter: grayscale(100%);

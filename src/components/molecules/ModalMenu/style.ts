@@ -50,6 +50,3 @@ export const Header = styled.div`
   position: relative;
   top: 10px;
 `;
-export const ButtonClose = styled.img`
-  width: 20px;
-`;

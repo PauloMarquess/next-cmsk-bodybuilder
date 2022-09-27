@@ -1,8 +1,9 @@
 import { icons } from "../../../assets";
 import { navigation } from "../../../__mocks__";
 import { ChangeLanguage } from "../../../components";
-import { ButtonClose, Header, ModalCard } from "./style";
+import { Header, ModalCard } from "./style";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import Image from "next/future/image";
 
 const ModalMenu = ({ setModalVisible, modalVisible }: any) => {
   const exitModal = () => {
@@ -13,7 +14,7 @@ const ModalMenu = ({ setModalVisible, modalVisible }: any) => {
     <ModalCard>
       <Header onClick={exitModal}>
         <ChangeLanguage />
-        <ButtonClose src={icons.close} alt="imagem de X" />
+        <Image width={20} src={icons.close} alt="imagem de X" />
       </Header>
       <nav onClick={exitModal}>
         {navigation.map((nav) => (

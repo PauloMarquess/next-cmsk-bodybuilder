@@ -1,6 +1,8 @@
+/* eslint-disable react/jsx-key */
 import { icons } from "../assets";
 import { i18n } from "../translate/i18n.js";
 import { images } from "../assets";
+import Image from "next/future/image";
 
 export const navigation = [
   {
@@ -298,7 +300,7 @@ export const openingHours = [
   },
 ];
 export const StarMaped = [1, 2, 3, 4, 5].map(() => (
-  <img src={icons.Star} alt="star" />
+  <Image src={icons.Star} alt="star" />
 ));
 
 export const ClientsMocks = [

@@ -7,11 +7,8 @@ export const CardMobile = styled.div`
     display: flex;
   }
 `;
-export const IconCard = styled.img`
-  @media (max-width: 769px) {
-    width: 50px;
-    position: fixed;
-    right: 0;
-    top: 14px;
-  }
+export const IconCard = styled.div`
+  position: fixed;
+  right: 0;
+  top: 14px;
 `;

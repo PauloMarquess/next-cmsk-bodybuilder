@@ -10,18 +10,21 @@ import {
   ButtonModal,
 } from "./style";
 import { useEffect, useState } from "react";
+import Image from "next/future/image";
 
 const Team = () => {
   const [modal, setModal] = useState(false);
   const [details, setDetails] = useState({});
+
   const handleModal = (item: any) => {
     setModal(!modal);
     setDetails(item);
   };
-  const element: any = document.getElementById("main");
-  useEffect(() => {
-    !modal && (element.style.overflow = "visible");
-  }, [modal]);
+
+  // useEffect(() => {
+  //   const element: any = document.getElementById("main");
+  //   !modal && (element.style.overflow = "visible");
+  // }, [modal]);
   return (
     <Container
       responsive
@@ -42,7 +45,7 @@ const Team = () => {
         )}
         {team.map((item) => (
           <Teacher key={item.name}>
-            <img id={item.id} src={item.image} alt="foto do professor " />
+            <Image id={item.id} src={item.image} alt="foto do professor " />
             <Details>
               <h1>{item.name}</h1>
               <p>{item.functionTeacher}</p>
@@ -52,7 +55,7 @@ const Team = () => {
                   handleModal(item);
                 }}
               >
-                {i18n.t("team.specialties")}
+                {`${i18n.t("team.specialties")}`}
               </ButtonModal>
             </Details>
           </Teacher>

@@ -3,6 +3,7 @@ import { Container } from "../../../components";
 import { CardMission, ImageMission, ListObjtive } from "./style";
 import { i18n } from "../../../translate/i18n.js";
 import { objective } from "../../../__mocks__";
+import Image from "next/future/image";
 
 const Mission = () => {
   return (
@@ -17,20 +18,20 @@ const Mission = () => {
         <p>
           {i18n.t("mission.description")}
           {i18n.t("mission.descriptionRestInit")}
-          <strong>{i18n.t("mission.descriptionSpan")}</strong>
+          <strong>{`${i18n.t("mission.descriptionSpan")}`}</strong>
           {i18n.t("mission.descriptionRest")}
         </p>
         <ListObjtive>
           {objective.map((obj) => (
             <li key={obj.name}>
-              <img src={icons.verify} />
+              <Image src={icons.verify} alt="imagem verificada" />
               {obj.name}
             </li>
           ))}
         </ListObjtive>
       </CardMission>
       <ImageMission>
-        <img src={images.mission} alt="foto Charles Mario e Monika" />
+        <Image src={images.mission} alt="foto Charles Mario e Monika" />
       </ImageMission>
     </Container>
   );

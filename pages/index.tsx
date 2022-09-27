@@ -1,9 +1,12 @@
-import { Header, Presentation } from "../src/components";
+import { Header, Mission, Presentation, Team } from "../src/components";
 
 const Home = () => {
   return (
     <>
       <Header />
+      <Presentation />
+      <Mission />
+      <Team />
     </>
   );
 };

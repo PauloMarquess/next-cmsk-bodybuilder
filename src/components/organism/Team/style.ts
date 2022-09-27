@@ -49,36 +49,45 @@ export const Teacher = styled.div`
 
   img {
     width: 300px;
+    height: 380px;
+    position: relative;
     filter: drop-shadow(0px 0px 1px ${COLORS.primary});
   }
   #charles {
-    position: relative;
+    height: 310px;
     top: 70px;
   }
   #aline {
-    position: relative;
     right: 20px;
+    top: 30px;
+  }
+  #vinicius {
+    position: relative;
   }
   #harley {
     position: relative;
     top: 60px;
     width: 330px;
   }
+  #janaina {
+    top: 40px;
+  }
   #monica {
-    position: relative;
-    top: 30px;
+    top: 50px;
+    right: 20px;
     width: 380px;
   }
   #anderson {
     width: 260px;
-    position: relative;
+
     top: 50px;
+    height: 370px;
   }
 
   h1 {
     text-transform: uppercase;
     text-align: center;
-    width: 10ch;
+    width: 0ch;
   }
   @media (max-width: 769px) {
     width: 100%;

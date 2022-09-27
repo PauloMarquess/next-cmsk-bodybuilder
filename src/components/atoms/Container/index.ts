@@ -27,7 +27,7 @@ export const Container = styled.section<ContainerProps>`
   background-color: ${({ backgroundColor }) =>
     backgroundColor && `${COLORS.black_light}`};
   background-image: ${({ backgroundParallax }) =>
-    backgroundParallax && `url(${images.parallax})`};
+    backgroundParallax && `url(${images.parallax.src})`};
   background-attachment: ${({ backgroundParallax }) =>
     backgroundParallax && `fixed`};
   padding: ${(props) => (props.padding ? props.padding : "0")};

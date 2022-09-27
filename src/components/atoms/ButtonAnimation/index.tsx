@@ -1,9 +1,8 @@
-import { ReactNode } from "react";
 import { ButtonAnimations } from "./style";
 import { i18n } from "../../../translate/i18n.js";
 
 interface ButtonAnimationProps {
-  children: ReactNode;
+  children: any;
 }
 
 const ButtonAnimation = ({ children }: ButtonAnimationProps) => {

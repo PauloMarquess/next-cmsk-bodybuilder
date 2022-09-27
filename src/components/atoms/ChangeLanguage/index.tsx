@@ -1,3 +1,4 @@
+import Image from "next/future/image";
 import { useEffect, useState } from "react";
 import Select from "react-select";
 import { images } from "../../../assets";
@@ -34,7 +35,7 @@ const ChangeLanguage = () => {
         backspaceRemovesValue
         formatOptionLabel={(country) => (
           <CardSelect>
-            <img src={country.icon} alt="country-image" />
+            <Image src={country.icon} alt="country-image" />
             <span>{country.label}</span>
           </CardSelect>
         )}

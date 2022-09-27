@@ -1,3 +1,4 @@
+import Image from "next/future/image";
 import { useState } from "react";
 import { icons } from "../../../assets";
 import { ModalMenu } from "../../../components";
@@ -11,7 +12,14 @@ const NavigationMobile = () => {
 
   return (
     <CardMobile>
-      <IconCard src={icons.menu} onClick={handleModal} />
+      <IconCard onClick={handleModal}>
+        <Image
+          className="social-media"
+          src={icons.menu}
+          alt="imagem das redes sociais"
+          width={50}
+        />
+      </IconCard>
       {modalVisible && (
         <ModalMenu
           setModalVisible={setModalVisible}
