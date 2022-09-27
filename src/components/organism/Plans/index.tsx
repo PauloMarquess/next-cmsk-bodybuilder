@@ -12,6 +12,7 @@ import {
   ListBenefit,
   Price,
 } from "./style";
+import Image from "next/future/image";
 
 const Plans = () => {
   return (
@@ -24,13 +25,20 @@ const Plans = () => {
       responsive
     >
       <LegensPlan>
-        {i18n.t("plans.title")} <span>{i18n.t("plans.titleSpan")}</span>{" "}
+        {i18n.t("plans.title")} <span>{`${i18n.t("plans.titleSpan")}`}</span>{" "}
       </LegensPlan>
       <CardPlans>
         {plans.map((plan, i) => (
           <CardPlan key={i}>
             {plan.destak && (
-              <CrownAbsolute src={images.crown} alt="imagem da coroa" />
+              <CrownAbsolute>
+                <Image
+                  width={70}
+                  height={35}
+                  src={images.crown}
+                  alt="imagem da coroa"
+                />
+              </CrownAbsolute>
             )}
             <h3>{plan.legend}</h3>
             <p>
@@ -39,13 +47,13 @@ const Plans = () => {
             </p>
             <Divider />
 
-            <h3>{i18n.t("plans.benefitsPlans")}</h3>
+            <h3>{`${i18n.t("plans.benefitsPlans")}`}</h3>
             <h6>{plan.legend}</h6>
             <ListBenefit>
               {plan.benefits.map((benefit, index) => (
                 <li key={index}>
                   <span>
-                    <img src={icons.arrow} alt="imagem icone" />
+                    <Image width={15} src={icons.arrow} alt="imagem icone" />
                   </span>
                   {benefit.name}
                 </li>
@@ -57,7 +65,7 @@ const Plans = () => {
               link={plan.link}
               target="_blank"
             >
-              {i18n.t("plans.button")}
+              {`${i18n.t("plans.button")}`}
             </ButtonLink>
           </CardPlan>
         ))}

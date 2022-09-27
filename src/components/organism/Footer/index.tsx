@@ -8,6 +8,7 @@ import {
   ContactCard,
   OpeningHours,
 } from "./style";
+import Image from "next/future/image.js";
 
 const Footer = () => {
   return (
@@ -16,16 +17,16 @@ const Footer = () => {
         <Logo />
       </LogoCard>
       <OpeningHours>
-        <h2>{i18n.t("footer.openingHours.title")}</h2>
+        <h2>{`${i18n.t("footer.openingHours.title")}`}</h2>
         {openingHours.map((item, index) => (
           <EachHour i={item} index={index} key={index} />
         ))}
       </OpeningHours>
       <ContactCard>
-        <h2>{i18n.t("footer.contacts.title")}</h2>
+        <h2>{`${i18n.t("footer.contacts.title")}`}</h2>
         {contact.map((item, index) => (
           <Contact key={index}>
-            <img src={item.icon} alt="icone" />
+            <Image src={item.icon} alt="icone" />
             <h4>
               <a href={item.href}>{item.title}</a>
             </h4>

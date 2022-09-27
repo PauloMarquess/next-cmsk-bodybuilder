@@ -17,19 +17,26 @@ import {
   Background,
 } from "./style";
 import { ImageTestimonial } from "../../atoms/ImageTestimonial";
+import Image from "next/future/image";
+import { useEffect, useState } from "react";
 
 SwiperCore.use([Navigation, Pagination]);
 
 const Testimonial = () => {
-  const width = window.innerWidth;
-  let perView = 1.5;
-  if (width < 1055) {
-    perView = 1.2;
-  }
+  const [perView, setPerView] = useState(1.5);
 
-  if (width < 769) {
-    perView = 1;
-  }
+  useEffect(() => {
+    const width = window.innerWidth;
+
+    if (width < 1055) {
+      setPerView(1.2);
+    }
+
+    if (width < 769) {
+      setPerView(1);
+    }
+  }, [perView]);
+
   return (
     <SectionTestimonial>
       <CardTestimonial>
@@ -41,7 +48,12 @@ const Testimonial = () => {
       </CardTestimonial>
       <SlideContainer>
         <Background>
-          <img src={icons.background} alt="imagem background" />
+          <Image
+            width={300}
+            height={300}
+            src={icons.background}
+            alt="imagem background"
+          />
         </Background>
         <Swiper
           slidesPerView={perView}
@@ -49,12 +61,15 @@ const Testimonial = () => {
           pagination={{ clickable: true }}
           loop
         >
-          {ClientsMocks.map((i) => (
-            <SwiperSlide>
+          {ClientsMocks.map((i, index) => (
+            <SwiperSlide key={index}>
               <CardStudent>
-                <ImageTestimonial src={i.img} alt="perfil do cliente" />
+                <ImageTestimonial>
+                  <Image src={i.img} alt="perfil do cliente" />
+                </ImageTestimonial>
+
                 <StudentComent>
-                  <img src={icons.aspa} />
+                  <Image src={icons.aspa} alt="imagem das  aspas" />
                   <p>{i.description}</p>
                   <StudentAssessment>
                     <h4>{i.name}</h4>

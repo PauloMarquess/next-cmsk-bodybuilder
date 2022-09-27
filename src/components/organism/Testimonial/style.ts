@@ -59,10 +59,10 @@ export const SlideContainer = styled.div`
     }
   }
   .swiper-button-next {
-    content: url(${icons.arrowRight});
+    content: url(${icons.arrowRight.src});
   }
   .swiper-button-prev {
-    content: url(${icons.arrowLeft});
+    content: url(${icons.arrowLeft.src});
   }
   .swiper-pagination-bullet {
     background-color: ${COLORS.black};

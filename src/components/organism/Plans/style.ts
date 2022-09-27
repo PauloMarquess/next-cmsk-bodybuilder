@@ -74,9 +74,6 @@ export const ListBenefit = styled.ul`
     align-items: center;
     gap: 5px;
   }
-  img {
-    width: 15px;
-  }
 `;
 
 export const Cifrao = styled.span`
@@ -95,10 +92,10 @@ export const Divider = styled.div`
   position: relative;
   bottom: 10px;
 `;
-export const CrownAbsolute = styled.img`
+export const CrownAbsolute = styled.div`
   width: 70px;
   position: absolute;
-  top: -5px;
+  top: -10px;
   left: -25px;
   transform: rotate(320deg);
 `;
