@@ -131,6 +131,22 @@ export const CardLinks = styled.div`
   }
 `;
 
-export const ButtonModal = styled(CardButton)`
+export const ButtonModal = styled.button`
+  background: ${COLORS.third};
+  color: ${COLORS.black};
+  padding: 15px 20px;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 auto;
+  border: 2px solid ${COLORS.third};
   width: 80%;
+  text-align: center;
+
+  box-shadow: 0px 0px 1px 0px #000;
+
+  :hover {
+    font-weight: bold;
+    background-color: ${COLORS.black_medium};
+    color: ${COLORS.third};
+  }
 `;
