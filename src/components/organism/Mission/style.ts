@@ -8,7 +8,6 @@ export const CardMission = styled.div`
   gap: 20px;
   padding-right: 100px;
   span {
-    color: ${COLORS.primary};
     font-weight: bolder;
   }
   h1 {
@@ -18,11 +17,14 @@ export const CardMission = styled.div`
   h2 {
     font-size: 1.1rem;
   }
+
   @media (max-width: 769px) {
     width: 100%;
     margin: 50px 0;
     padding-right: 0px;
-
+    span {
+      font-size: 25px;
+    }
     h1 {
       width: 100%;
       font-size: 1rem;
@@ -34,6 +36,9 @@ export const CardMission = styled.div`
       }
     }
   }
+`;
+export const Destak = styled.span`
+  color: ${COLORS.primary};
 `;
 
 export const ImageMission = styled.div`

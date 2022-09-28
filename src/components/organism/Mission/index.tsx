@@ -1,6 +1,6 @@
 import { images, icons } from "../../../assets";
 import { Container } from "../../../components";
-import { CardMission, ImageMission, ListObjtive } from "./style";
+import { CardMission, Destak, ImageMission, ListObjtive } from "./style";
 import { i18n } from "../../../translate/i18n.js";
 import { objective } from "../../../__mocks__";
 import Image from "next/future/image";
@@ -11,18 +11,19 @@ const Mission = () => {
       <CardMission>
         <h1>
           <>
-            {i18n.t("mission.title")}
-            <span>
+            <span>{`${i18n.t("mission.title")}`}</span>
+
+            <Destak>
               <> {i18n.t("mission.titleSpan")}</>
-            </span>
+            </Destak>
           </>
         </h1>
         <>
-          <h2>
+          <h3>
             <>
-              <span> | </span> {i18n.t("mission.subtitle")}
+              <Destak> | </Destak> {i18n.t("mission.subtitle")}
             </>
-          </h2>
+          </h3>
         </>
 
         <p>
