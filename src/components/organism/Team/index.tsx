@@ -9,22 +9,21 @@ import {
   Details,
   ButtonModal,
 } from "./style";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/future/image";
 
-const Team = () => {
+const Team = ({ setOverflow }: any) => {
   const [modal, setModal] = useState(false);
   const [details, setDetails] = useState({});
 
   const handleModal = (item: any) => {
     setModal(!modal);
+    {
+      modal ? setOverflow("visible") : setOverflow("hidden");
+    }
     setDetails(item);
   };
 
-  // useEffect(() => {
-  //   const element: any = document.getElementById("body");
-  //   !modal && (element.style.overflow = "hidden");
-  // }, []);
   return (
     <Container
       responsive

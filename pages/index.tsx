@@ -11,16 +11,19 @@ import {
   Team,
   Testimonial,
 } from "../src/components";
+import { GlobalStyle } from "../styles";
 
 const Home = () => {
   const [showComponent, setShowComponent] = useState(false);
+  const [overflow, setOverflow] = useState("");
   useEffect(() => {
     setShowComponent(true);
   }, []);
   return (
     <>
+      <GlobalStyle overflow={overflow} />
       {showComponent && (
-        <div id="main">
+        <>
           <Head>
             <title>CMSK Bodybuilding Fitness</title>
             <link rel="icon" type="image/svg+xml" href="/cmsk.png" />
@@ -36,17 +39,18 @@ const Home = () => {
               name="description"
               content="Usar o conhecimento do bodybuilding para transformação dos físicos, pautado em estratégias e planejamentos completos, uma arte em esculpir corpos, de acordo com os objetivos de cada um, desde de emagrecimento, tônus, ganho de massa muscular, modelagem etc."
             />
+            <meta name="title" content="CMSK Bodybuilding Fitness" />
           </Head>
           <Header />
           <Presentation />
           <Mission />
-          <Team />
+          <Team setOverflow={setOverflow} />
           <Plans />
           <Testimonial />
           <Footer />
           <Chat />
           <Copyright />
-        </div>
+        </>
       )}
     </>
   );

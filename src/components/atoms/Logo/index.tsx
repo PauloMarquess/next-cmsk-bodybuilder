@@ -5,7 +5,11 @@ import { ImageLogo } from "./style";
 const Logo = () => {
   return (
     <ImageLogo>
-      <Image className="logo" src={images.logo} alt="Imagem cms bodybuilding" />
+      <Image
+        className="logo"
+        src={images.logo}
+        alt="Imagem cmsk bodybuilding"
+      />
     </ImageLogo>
   );
 };

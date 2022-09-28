@@ -20,9 +20,12 @@ export const CardModal = styled(Container)`
   position: relative;
   top: 10%;
   padding: 40px 0 50px 0;
+  max-height: 88%;
+
   @media (max-width: 769px) {
     width: 92%;
     padding: 30px;
+    max-height: auto;
   }
 `;
 

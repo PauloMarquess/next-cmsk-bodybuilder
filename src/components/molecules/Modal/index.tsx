@@ -1,5 +1,4 @@
 import Image from "next/future/image";
-import { useEffect } from "react";
 import { icons } from "../../../assets";
 
 import {
@@ -11,7 +10,7 @@ import {
   CardLogoPerfil,
 } from "./style";
 
-const Modal = ({ id = "modal", handleModal, details, modal }: any) => {
+const Modal = ({ id = "modal", handleModal, details }: any) => {
   const handleOutsideClick = (e: any) => {
     if (e.target.id === id) {
       handleModal();
@@ -19,10 +18,6 @@ const Modal = ({ id = "modal", handleModal, details, modal }: any) => {
   };
   const { name, perfil, specialties } = details;
 
-  // useEffect(() => {
-  //   const element: any = document.getElementById("main");
-  //   modal && (element.style.overflow = "");
-  // }, [modal]);
   return (
     <ContainerModal onClick={handleOutsideClick} id={id}>
       <CardModal>
