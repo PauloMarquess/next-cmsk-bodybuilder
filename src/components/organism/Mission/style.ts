@@ -15,7 +15,7 @@ export const CardMission = styled.div`
     text-transform: uppercase;
     font-size: 2.2rem;
   }
-  h3 {
+  h2 {
     font-size: 1.1rem;
   }
   @media (max-width: 769px) {
@@ -27,7 +27,7 @@ export const CardMission = styled.div`
       width: 100%;
       font-size: 1rem;
     }
-    h3 {
+    h2 {
       width: 80%;
       span {
         display: none;

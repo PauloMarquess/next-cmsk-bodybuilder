@@ -52,7 +52,7 @@ const Plans = () => {
             <Divider />
 
             <h3>{`${i18n.t("plans.benefitsPlans")}`}</h3>
-            <h6>{plan.legend}</h6>
+            <p>{plan.legend}</p>
             <ListBenefit>
               {plan.benefits.map((benefit, index) => (
                 <li key={index}>

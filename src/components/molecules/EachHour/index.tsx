@@ -14,8 +14,8 @@ const EachHour = ({ i, index }: EachHourProps) => {
 
   return (
     <EachHours isDay={isDay}>
-      <h6>{i.day}</h6>
-      <h6>{i.hour}</h6>
+      <p>{i.day}</p>
+      <p>{i.hour}</p>
     </EachHours>
   );
 };

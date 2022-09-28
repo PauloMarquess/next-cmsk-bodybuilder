@@ -10,6 +10,7 @@ html,body{
   overflow: ${(props) => (props.overflow ? props.overflow : "visible")};
 
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +23,7 @@ html,body{
   transition: all 0.3s ease-in-out;
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   -webkit-font-smoothing: antialiased;
 }

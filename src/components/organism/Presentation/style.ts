@@ -17,11 +17,11 @@ export const Information = styled.div`
   a {
     width: 30%;
   }
-  h2 {
+  h1 {
     font-size: 2.2rem;
     text-transform: uppercase;
   }
-  h1 {
+  h2 {
     font-size: 4.8rem;
     width: 70%;
     margin: 0 auto;
@@ -29,7 +29,7 @@ export const Information = styled.div`
   }
   h6 {
     font-size: 1.2rem;
-    font-family: 700;
+    font-family: 600;
   }
   @keyframes show {
     from {

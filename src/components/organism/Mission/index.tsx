@@ -18,11 +18,11 @@ const Mission = () => {
           </>
         </h1>
         <>
-          <h3>
+          <h2>
             <>
               <span> | </span> {i18n.t("mission.subtitle")}
             </>
-          </h3>
+          </h2>
         </>
 
         <p>

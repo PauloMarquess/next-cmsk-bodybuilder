@@ -16,8 +16,8 @@ const Presentation = () => {
         />
       </CardImages>
       <Information>
-        <h2>{`${i18n.t("presentation.title")}`}</h2>
-        <h1>{`${i18n.t("presentation.subtitle")}`}</h1>
+        <h1>{`${i18n.t("presentation.title")}`}</h1>
+        <h2>{`${i18n.t("presentation.subtitle")}`}</h2>
         <h6>{`${i18n.t("presentation.description")}`}</h6>
 
         <ButtonAnimation children={i18n.t("presentation.button")} />

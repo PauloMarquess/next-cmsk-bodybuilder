@@ -112,7 +112,8 @@ export const Details = styled.div`
   }
   p {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 14px;
   }
 `;
 
