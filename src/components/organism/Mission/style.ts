@@ -23,7 +23,7 @@ export const CardMission = styled.div`
     margin: 50px 0;
     padding-right: 0px;
     span {
-      font-size: 25px;
+      font-size: 18px;
     }
     h1 {
       width: 100%;
@@ -34,6 +34,9 @@ export const CardMission = styled.div`
       span {
         display: none;
       }
+    }
+    h3 {
+      font-size: 16px;
     }
   }
 `;
