@@ -299,8 +299,8 @@ export const openingHours = [
     hour: "08:00-12:00",
   },
 ];
-export const StarMaped = [1, 2, 3, 4, 5].map(() => (
-  <Image src={icons.Star} alt="star" />
+export const StarMaped = [1, 2, 3, 4, 5].map((_, i) => (
+  <Image key={i} src={icons.Star} alt="star" />
 ));
 
 export const ClientsMocks = [
