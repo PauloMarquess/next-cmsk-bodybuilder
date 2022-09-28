@@ -22,9 +22,9 @@ const Team = () => {
   };
 
   // useEffect(() => {
-  //   const element: any = document.getElementById("main");
-  //   !modal && (element.style.overflow = "visible");
-  // }, [modal]);
+  //   const element: any = document.getElementById("body");
+  //   !modal && (element.style.overflow = "hidden");
+  // }, []);
   return (
     <Container
       responsive

@@ -18,11 +18,11 @@ const Modal = ({ id = "modal", handleModal, details, modal }: any) => {
     }
   };
   const { name, perfil, specialties } = details;
-  // const element: any = document.getElementById("main");
 
   // useEffect(() => {
-  //   modal && (element.style.overflow = "hidden");
-  // }, [element.style, modal]);
+  //   const element: any = document.getElementById("main");
+  //   modal && (element.style.overflow = "");
+  // }, [modal]);
   return (
     <ContainerModal onClick={handleOutsideClick} id={id}>
       <CardModal>

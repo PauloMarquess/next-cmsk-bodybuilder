@@ -15,6 +15,7 @@ interface ContainerProps {
   backgroundParallax?: boolean;
   padding?: string;
   margin?: string;
+  overflow?: string;
 }
 export const Container = styled.section<ContainerProps>`
   display: flex;
