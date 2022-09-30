@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useState } from "react";
 import {
   Chat,
@@ -18,21 +17,19 @@ const Home = () => {
   const [overflow, setOverflow] = useState("");
 
   return (
-    <>
-      <>
-        <MetaTags />
-        <Header />
-        <Presentation />
-        <Mission />
-        <Team setOverflow={setOverflow} />
-        <Plans />
-        <Testimonial />
-        <Footer />
-        <Chat />
-        <Copyright />
-        <GlobalStyle overflow={overflow} />
-      </>
-    </>
+    <main suppressHydrationWarning={true}>
+      <MetaTags />
+      <Header />
+      <Presentation />
+      <Mission />
+      <Team setOverflow={setOverflow} />
+      <Plans />
+      <Testimonial />
+      <Footer />
+      <Chat />
+      <Copyright />
+      <GlobalStyle overflow={overflow} />
+    </main>
   );
 };
 

@@ -5,6 +5,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  optimization: {
+    minimize: false,
+  },
 };
 
 module.exports = nextConfig;
