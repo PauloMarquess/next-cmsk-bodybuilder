@@ -35,6 +35,10 @@ const Home = () => {
             content="Usar o conhecimento do bodybuilding para transformação dos físicos, pautado em estratégias e planejamentos completos, uma arte em esculpir corpos, de acordo com os objetivos de cada um, desde de emagrecimento, tônus, ganho de massa muscular, modelagem etc."
           />
           <meta name="title" content="CMSK Bodybuilding Fitness" />
+          <meta
+            name="google-site-verification"
+            content="thDomP7UX3MU8pEpwdxH39gqalKFaX8vUPsvnnsMWEE"
+          />
         </Head>
         <Header />
         <Presentation />
