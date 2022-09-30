@@ -13,6 +13,7 @@ export const Information = styled.div`
   bottom: 50px;
   transition: 1s;
   animation: show 1.5s both;
+  max-width: 1000px;
   color: ${COLORS.white_default};
   a {
     width: 30%;
@@ -67,6 +68,7 @@ export const CardImages = styled.div`
   position: relative;
   left: 200px;
   top: 60px;
+  max-width: 750px;
 
   @media (max-width: 769px) {
     width: 100%;
